@@ -2,7 +2,7 @@
 marp: true
 ---
 
-Specification
+- Specification
 ```
 READ|WRITE
 
@@ -16,8 +16,8 @@ SLI: Throughput                       = number of requests / time window
 SLO 1000 reqs/min
 
 ```
-
-Realization
+---
+- Realization
 ```
 Source : server prometheus logs
 
@@ -39,8 +39,8 @@ request_total:rate1m{verb="read"}
 request_total:rate1m{verb="write"}
 
 ```
-
-Uncovered cases
+---
+- Uncovered cases
 
 ```
 Requests to old_domain.com
