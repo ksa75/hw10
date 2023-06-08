@@ -25,8 +25,8 @@ GET|POST
 
 Availability
 
-(1 - (request_total:rate5m{verb="read",code!~"5.."} / request_total:rate5m{verb="read"})) * 100
-(1 - (request_total:rate5m{verb="write",code!~"5.."} / request_total:rate5m{verb="write"})) * 100
+(request_total:rate5m{verb="read",code!~"5.."} / request_total:rate5m{verb="read"}) * 100
+(request_total:rate5m{verb="write",code!~"5.."} / request_total:rate5m{verb="write"}) * 100
 
 Latency
 
